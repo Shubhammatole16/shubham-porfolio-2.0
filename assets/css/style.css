@@ -750,23 +750,19 @@
 
    /* responsive larger than 450px screen */
 
-   @media (max-width: 400px) {
+   @media (min-width: 340px) {
 
     /* RESUME */
-    .skill-progress-bg { gap: 20px; }
-     
+    .skill-progress-bg { gap: 15px; }
   }
 
   @media (min-width: 450px) {
   
-
       /* #PORTFOLIO, BLOG  */
   
     .project-img,
     .blog-banner-box { height: auto; }
-  
   }
-  
   
     /* responsive larger than 580px screen */
 
@@ -784,8 +780,7 @@
       --fs-4: 18px;
       --fs-6: 15px;
       --fs-7: 15px;
-      --fs-8: 12px;
-  
+      --fs-8: 12px
     }
   
       /* #REUSED STYLE */
