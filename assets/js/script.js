@@ -14,7 +14,7 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 function downloadResume() {
   const savecv = document.createElement("a");
 
-  savecv.href = "./assets/cv/Shubham_Matole_Resume.pdf";
+  savecv.href = "./assets/Shubham_Matole_Resume.pdf";
   savecv.download = "Shubham_Matole_Resume.pdf";
   savecv.style.display = "none";
 
