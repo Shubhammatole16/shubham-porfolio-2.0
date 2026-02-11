@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shubham-portfolio 2.0</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--
+    - #MAIN
+  -->
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar3.png" alt="Shubham Matole" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Shubham Matole">Shubham Matole</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="#" class="contact-link">shubhammatole1@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="#" class="contact-link">+91 9518303249</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">March 16, 2001</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Boisar, Maharashtra, India</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item" title="GitHub">
+            <a href="https://github.com/Shubhammatole16" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item" title="linkedin">
+            <a href="https://www.linkedin.com/in/shubham-matole-81335021b" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item" title="LeetCode">
+            <a href="https://leetcode.com/Shubham1603/" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <span>Hello, I'm Shubham Matole</span> 
+            — a Computer Science Engineering graduate 
+            and aspiring <strong>Java Backend Developer</strong> with a strong foundation in 
+            building scalable and secure web applications.
+          </p>
+          <p>
+            I specialize in <strong>Java, Spring Boot, REST APIs, and MySQL</strong>, with hands-on 
+            experience developing full-stack academic projects including an 
+            e-commerce platform and a course management system. 
+            I focus on writing clean, maintainable code using object-oriented 
+            programming principles.
+          </p>
+          <p>
+            My experience includes implementing RESTful APIs with pagination, 
+            sorting, input validation, and global exception handling. I also ensure 
+            secure and reliable systems by applying best practices in backend 
+            development and data handling.
+          </p>
+          <p>
+            I am a quick learner, problem solver, and technology enthusiast who 
+            continuously strives to improve technical skills and contribute to 
+            impactful software solutions.
+          </p>
+          <p>
+            Currently seeking an opportunity as a Software Developer where I can 
+            apply my knowledge, grow professionally, and deliver meaningful results.
+          </p>
+        </section>
+        <button class="form-btn" onclick="downloadResume()">
+          <ion-icon name="download-outline" style="font-size: 24px;"></ion-icon>
+          <span>Download CV</span>
+        </button>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        
+        <section class="skill">
+          <h3 class="h3 skills-title">Technical Skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h4 class="h5">Programming Languages</h4>
+              </div>
+              <div class="skill-progress-bg">
+                <p>
+                  <span> &nbsp;&nbsp;&nbsp;Java, &nbsp;&nbsp; JavaScript</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Backend Development :</h4>
+              </div>
+              <div class="skill-progress-bg">
+                <p>
+                  <span> &nbsp;&nbsp;&nbsp;Spring Boot, &nbsp;&nbsp;Spring MVC, &nbsp;&nbsp;RESTful APIs, &nbsp;&nbsp;JDBC</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Web Development :</h4>
+              </div>
+
+              <div class="skill-progress-bg">
+                <p>
+                  <span> &nbsp;&nbsp;&nbsp;Html5, &nbsp;&nbsp;CSS3, &nbsp;&nbsp;Bootstrap</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Databases :</h4>
+              </div>
+
+              <div class="skill-progress-bg">
+                <p>
+                  <span> &nbsp;&nbsp;&nbsp;MySQL</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Tools & Technologies :</h4>
+              </div>
+              <div class="skill-progress-bg">
+                <p>
+                  <span> &nbsp;&nbsp;&nbsp;Git, &nbsp;&nbsp;GitHub, &nbsp;&nbsp;Postman</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h4 class="h5">Core Concepts :</h4>
+              </div>
+
+              <div class="skill-progress-bg">
+                <p>
+                  <span> &nbsp;&nbsp;&nbsp;Object-Oriented Programming(OOP), &nbsp;&nbsp;Data Structures, &nbsp;&nbsp;API Design</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Jayawantrao Sawant College of Engineering, Pune</h4>
+              <span>2019 — 2023</span>
+              <p class="timeline-text">
+                Year of Completion: 2023<br>
+                CGPA: <strong>8.41 / 10</strong>
+              </p>                                                                                                                                                      
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">H. D. Save Jr. College, Tarapur(HSC)</h4>
+              <span>20018 — 2019</span>
+              <p class="timeline-text">
+                Year of Completion: 2019<br>                                                                                                                         
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Boisar Military School, Boisar(SSC)</h4>
+              <span>2016 — 2017</span>
+              <p class="timeline-text">
+                Year of Completion: 2017<br>                                                                                  
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <button class="form-btn" onclick="downloadResume()">
+          <ion-icon name="download-outline" style="font-size: 24px;"></ion-icon>
+          <span>Download CV</span>
+        </button>
+      </article>
+
+      <!--
+        - #PROJECT
+      -->
+      <article class="project" data-page="project">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="project">
+          <ul class="project-list">
+
+            <!-- Project 1 - LearnTrack -->
+            <li class="project-item">
+              <div class="project-card">
+            
+                <h3 class="h3 project-title">
+                  LearnTrack 
+                </h3>
+                <p><strong style="color: rgba(240, 248, 255, 0.858);">– Course & Student Management System</strong></p>
+            
+                <p class="project-tech">
+                  <strong>Tech Stack:</strong> Spring Boot, MySQL, REST APIs, Postman
+                </p>
+            
+                <p class="project-description">
+                  Developed a backend application to manage courses and student
+                  enrollments using Spring Boot. Implemented RESTful APIs with
+                  pagination, sorting, validation, and global exception handling.
+                  Tested endpoints using Postman to ensure reliability and data integrity.
+                </p>
+            
+                <a href="https://github.com/Shubhammatole16/LearnTrack" target="_blank">
+                  View on GitHub
+                </a>
+            
+              </div>
+            </li>
+
+            <!-- Project 2 - Java Shop Me -->
+            <li class="project-item">
+              <div class="project-card">
+            
+                <h3 class="h3 project-title">
+                  Java-Shop-Me
+                </h3>
+                <p><strong style="color: rgba(240, 248, 255, 0.858);">– E-Commerce Web Application</strong></p>
+            
+                <p class="project-tech">
+                  <strong>Tech Stack:</strong> JSP, Servlets, JDBC, MySQL, Bootstrap
+                </p>
+            
+                <p class="project-description">
+                  Built a full-stack e-commerce platform featuring product browsing, 
+                  cart functionality, and checkout system. Designed responsive UI using 
+                  Bootstrap and handled backend database operations using JDBC.
+                </p>
+            
+                <a href="https://github.com/Shubhammatole16/java-SHOP-ME" target="_blank">
+                  View on GitHub
+                </a>
+            
+              </div>
+            </li>
+
+             <!-- Project 3 - Area Crime Alert System -->
+            <li class="project-item">
+              <div class="project-card">
+            
+                <h3 class="h3 project-title">
+                  Area Crime Alert System
+                </h3>
+                <p><strong style="color: rgba(240, 248, 255, 0.858);">– Final year project</strong></p>
+            
+                <p class="project-tech">
+                  <strong>Tech Stack:</strong> Java, MySQL, AES-256 Encryption
+                </p>
+            
+                <p class="project-description">
+                  Developed a mobile application that provides crime rate information 
+                  based on location. Implemented AES-256 encryption for secure data storage 
+                  and applied blockchain concepts to maintain data integrity.
+                </p>
+            
+              </div>
+            </li>
+
+            <!-- Project 4 - Portfolio Website -->
+            <li class="project-item">
+              <div class="project-card">
+            
+                <h3 class="h3 project-title">
+                  Shubham's Portfolio 2.0
+                </h3>
+                <p><strong style="color: rgba(240, 248, 255, 0.858);">– Personal Portfolio Website</strong></p>
+            
+                <p class="project-tech">
+                  <strong>Tech Stack:</strong> HTML, CSS, JavaScript
+                </p>
+            
+                <p class="project-description">
+                  Designed and developed a fully responsive portfolio website to 
+                  showcase technical skills and projects. Focused on clean UI design 
+                  and smooth user experience.
+                </p>
+            
+                <a href="https://github.com/Shubhammatole16/shubham-porfolio-2.0" target="_blank">
+                  View on GitHub
+                </a>
+            
+              </div>
+            </li>
+            
+          </ul>
+        </section>
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+
+          <section class="contact-info">
+          
+            <h3 class="h3">Let's Connect</h3>
+          
+            <p class="contact-text">
+              I am currently open to Software Developer and Java Backend Developer opportunities.
+              If you have an opportunity or would like to collaborate, feel free to reach out.
+            </p>
+          
+            <div class="contact-details">
+          
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:shubhammatole1@gmail.com">
+                  shubhammatole1@gmail.com
+                </a>
+              </p>
+          
+              <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Shubhammatole16" target="_blank">
+                  github.com/Shubhammatole16
+                </a>
+              </p>
+          
+              <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/shubham-matole-81335021b/" target="_blank">
+                  linkedin.com/in/shubham-matole
+                </a>
+              </p>
+          
+            </div>
+          
+            <button class="form-btn" onclick="downloadResume()">
+          <ion-icon name="download-outline" style="font-size: 24px;"></ion-icon>
+          <span>Download CV</span>
+        </button>
+          
+          </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form id="contact-form">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+
+
+    </div>
+  </main>
+
+  <!--
+    - emailjs library for sending an email
+  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {   
+            emailjs.init('-PgfGZa-MfaRrnqXu');
+        })();
+    </script>
+
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_e4p4xqn', 'template_a1q4ikp', this)
+                  .then(() => {
+                      console.log('SUCCESS!');
+                      this.reset();
+                      Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: 'Message sent successfully!',
+                        timer: 2000
+                    });
+                  }, (error) => {
+                      console.log('FAILED...', error);
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Message sending failed. Please try again.',
+                        timer: 2000
+                    });
+                  });
+          });
+      }
+    </script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
