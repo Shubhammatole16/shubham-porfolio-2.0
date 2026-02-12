@@ -905,6 +905,17 @@ textarea.form-input::-webkit-resizer {
     width: 85px;
     height: 85px;
   }
+    .skill .skills-title{
+    font-weight: var(--fw-600);
+    font-size: larger;
+  }
+  .skill .title-wrapper .h5{
+    font-weight: var(--fw-400);
+    font-size: var(--fs-6);
+  }
+  .skill-progress-bg{
+    font-size: small !important;
+  }
 
 }
 
