@@ -639,8 +639,8 @@ main {
 }
 
 .skill .title-wrapper .h5 {
-  font-size: large;
-  font-weight: bold;
+  font-size: medium;
+  font-weight: var(--fw-600);
 }
 
 .skill-progress-bg {
@@ -658,6 +658,7 @@ main {
 .skill-progress-bg span {
   color: var(--orange-yellow-crayola);
   display: inline;
+  font-size: var(--fs-6);
 }
 
 /*-----------------------------------*\
@@ -910,11 +911,11 @@ textarea.form-input::-webkit-resizer {
     font-size: larger;
   }
   .skill .title-wrapper .h5{
-    font-weight: var(--fw-400);
+    font-weight: var(--fw-600);
     font-size: var(--fs-6);
   }
-  .skill-progress-bg{
-    font-size: small !important;
+  .skill-progress-bg p span{
+    font-size: var(--fs-7);
   }
 
 }
